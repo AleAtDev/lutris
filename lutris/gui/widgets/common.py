@@ -5,12 +5,10 @@ import os
 import shlex
 import urllib.parse
 from gettext import gettext as _
-
 # Third Party Libraries
 from gi.repository import GLib, GObject, Gtk, Pango
 
 from lutris.gui.widgets.utils import open_uri
-
 # Lutris Modules
 from lutris.util import system
 from lutris.util.linux import LINUX_SYSTEM
@@ -291,7 +289,7 @@ class FileChooserEntry(Gtk.Box):
         path = original_path.strip("\r\n")
 
         if path.startswith("file:///"):
-            path = urllib.parse.unquote(path[len("file://") :])
+            path = urllib.parse.unquote(path[len("file://"):])
 
         path = os.path.expanduser(path)
 

@@ -2,11 +2,10 @@
 
 # isort:skip_file
 import enum
+import gi
 import os
 import subprocess
 from typing import Any, Dict
-
-import gi
 
 try:
     gi.require_version("GnomeDesktop", "3.0")

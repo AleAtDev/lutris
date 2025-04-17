@@ -1,12 +1,11 @@
 import json
 import os
+import requests
 import shutil
 import subprocess
 from gettext import gettext as _
 from pathlib import Path
 from typing import Any, Dict, List, Optional
-
-import requests
 
 from lutris import settings
 from lutris.exceptions import MissingExecutableError
@@ -181,8 +180,8 @@ class FlathubService(BaseService):
                         "execute": {
                             "file": flatpak_cmd[0],
                             "args": " ".join(flatpak_cmd[1:])
-                            + f" install --{self.install_type} --app --noninteractive flathub "
-                            f"app/{db_game['appid']}/{self.arch}/{self.branch}",
+                                    + f" install --{self.install_type} --app --noninteractive flathub "
+                                      f"app/{db_game['appid']}/{self.arch}/{self.branch}",
                             "disable_runtime": True,
                         }
                     }

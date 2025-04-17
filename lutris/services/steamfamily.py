@@ -2,9 +2,8 @@
 
 import json
 import os
-from gettext import gettext as _
-
 import requests
+from gettext import gettext as _
 
 from lutris import settings
 from lutris.services.base import SERVICE_LOGIN, AuthTokenExpiredError, OnlineService

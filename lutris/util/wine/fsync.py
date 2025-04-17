@@ -114,7 +114,7 @@ def _get_syscall_nr_from_headers(syscall_name):
     except ValueError as ex:
         raise RuntimeError(
             "failed to determine " + syscall_name + " syscall number: "
-            "__NR_" + syscall_name + " not a valid number: " + last_line
+                                                    "__NR_" + syscall_name + " not a valid number: " + last_line
         ) from ex
 
     assert False

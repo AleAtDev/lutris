@@ -114,7 +114,7 @@ class WinePrefixManager:
     def get_key_path(self, key):
         for prefix in (self.hkcu_prefix, self.hklm_prefix):
             if key.startswith(prefix):
-                return key[len(prefix) + 1 :]
+                return key[len(prefix) + 1:]
         raise ValueError("The key {} is currently not supported by WinePrefixManager".format(key))
 
     def get_registry_key(self, key, subkey):
@@ -156,7 +156,7 @@ class WinePrefixManager:
             if not folder:
                 logger.warning("Couldn't load shell folder name for %s", key)
                 continue
-            desktop_folders.append(folder[folder.rfind("\\") + 1 :])
+            desktop_folders.append(folder[folder.rfind("\\") + 1:])
         return desktop_folders or DEFAULT_DESKTOP_FOLDERS
 
     def install_desktop_integration(self):

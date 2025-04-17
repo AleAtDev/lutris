@@ -222,7 +222,7 @@ class SteamID:
             raise SteamIDError("Invalid universe {}".format(universe))
         if account_type not in ACCOUNT_TYPES:
             raise SteamIDError("Invalid type {}".format(account_type))
-        if account_number < 0 or account_number > (2**32) - 1:
+        if account_number < 0 or account_number > (2 ** 32) - 1:
             raise SteamIDError("Account number ({}) out of range".format(account_number))
         if instance not in [1, 0]:
             raise SteamIDError("Expected instance to be 1 or 0, got {}".format(instance))

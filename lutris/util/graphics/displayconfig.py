@@ -1,8 +1,7 @@
 """DBus backed display management for Mutter"""
 
-from collections import namedtuple
-
 import dbus
+from collections import namedtuple
 
 from lutris.settings import DEFAULT_RESOLUTION_HEIGHT, DEFAULT_RESOLUTION_WIDTH
 from lutris.util.log import logger

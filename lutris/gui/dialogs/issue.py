@@ -3,7 +3,6 @@
 import json
 import os
 from gettext import gettext as _
-
 from gi.repository import Gtk
 
 from lutris.gui.dialogs import NoticeDialog

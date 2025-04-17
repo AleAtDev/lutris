@@ -3,7 +3,6 @@ from gettext import gettext as _
 from os import path
 
 from lutris.exceptions import DirectoryNotFoundError, GameConfigError, MissingGameExecutableError
-
 # Lutris Modules
 from lutris.runners.runner import Runner
 

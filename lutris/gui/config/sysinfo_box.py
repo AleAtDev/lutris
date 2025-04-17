@@ -1,7 +1,6 @@
 from gettext import gettext as _
-from typing import Dict, Iterable, List
-
 from gi.repository import Gdk, Gtk
+from typing import Dict, Iterable, List
 
 from lutris.gui.config.base_config_box import BaseConfigBox
 from lutris.gui.widgets.log_text_view import LogTextView

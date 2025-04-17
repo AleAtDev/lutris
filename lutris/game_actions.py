@@ -4,9 +4,8 @@
 # pylint: disable=too-many-public-methods
 import os
 from gettext import gettext as _
-from typing import List
-
 from gi.repository import Gio, Gtk
+from typing import List
 
 from lutris.config import duplicate_game_config
 from lutris.database.games import add_game, get_game_by_field
@@ -391,7 +390,7 @@ class SingleGameActions(GameActions):
                     "but the games files will <b>not be duplicated</b>.\n"
                     "Please enter the new name for the copy:"
                 )
-                % gtk_safe(game.name),
+                            % gtk_safe(game.name),
                 "title": _("Duplicate game?"),
                 "initial_value": game.name,
             }

@@ -1,9 +1,8 @@
 """Handle Steam configuration"""
 
 import os
-from collections import OrderedDict
-
 import requests
+from collections import OrderedDict
 
 from lutris import settings
 from lutris.util import system

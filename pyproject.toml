@@ -5,15 +5,15 @@ packages = [
     "tests",
 ]
 exclude = [
-    ".*_pb2.py",  # Any automatically generated protobuf files
+    ".*_pb2.py", # Any automatically generated protobuf files
     "venv"
 ]
 disable_error_code = [
-    "no-redef",  # Allow variable redefinition
-    "has-type",  # Ignore when variable types cannot be determined.
-    "dict-item",  # Dictionaries are always fully dynamic
-    "var-annotated",  # Never require type annotations
-    "assignment",  # Allow incompatible types in assignment (used heavily in lutris class structure).
+    "no-redef", # Allow variable redefinition
+    "has-type", # Ignore when variable types cannot be determined.
+    "dict-item", # Dictionaries are always fully dynamic
+    "var-annotated", # Never require type annotations
+    "assignment", # Allow incompatible types in assignment (used heavily in lutris class structure).
 ]
 allow_redefinition = true
 follow_imports = "silent"

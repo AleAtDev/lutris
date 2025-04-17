@@ -4,7 +4,6 @@ import os
 
 # pylint: disable=no-member
 import yaml
-
 from lutris.util.log import logger
 from lutris.util.system import path_exists
 

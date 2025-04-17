@@ -4,7 +4,6 @@ import concurrent.futures
 import json
 import os
 from gettext import gettext as _
-
 from gi.repository import Gtk
 
 from lutris import settings

@@ -1,7 +1,6 @@
 """Add, remove and configure runners"""
 
 from gettext import gettext as _
-
 from gi.repository import Gtk
 
 from lutris import runners, settings

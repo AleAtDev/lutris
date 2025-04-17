@@ -1,7 +1,6 @@
 """TreeView based game list"""
 
 from gettext import gettext as _
-
 # Third Party Libraries
 # pylint: disable=no-member
 from gi.repository import Gdk, Gtk, Pango

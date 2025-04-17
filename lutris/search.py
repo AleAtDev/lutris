@@ -345,7 +345,6 @@ class GameSearch(BaseSearch):
 
     def get_installed_predicate(self, installed: Optional[bool]) -> SearchPredicate:
         if self.service:
-
             def is_installed(db_game):
                 appid = db_game.get("appid")
                 return bool(appid and appid in games.get_service_games(self.service.id))

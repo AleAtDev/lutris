@@ -1,7 +1,6 @@
 import os
 import time
 from gettext import gettext as _
-
 from gi.repository import GObject, Gtk, Pango
 
 from lutris.gui.dialogs import display_error

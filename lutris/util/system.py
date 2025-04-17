@@ -10,10 +10,9 @@ import string
 import subprocess
 import zipfile
 from gettext import gettext as _
+from gi.repository import Gio, GLib
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
-
-from gi.repository import Gio, GLib
 
 from lutris import settings
 from lutris.exceptions import MissingExecutableError
@@ -337,7 +336,7 @@ def merge_folders(source, destination):
     # the file permissions, and we do not want them.
     source = os.path.abspath(source)
     for dirpath, dirnames, filenames in os.walk(source):
-        source_relpath = dirpath[len(source) :].strip("/")
+        source_relpath = dirpath[len(source):].strip("/")
         dst_abspath = os.path.join(destination, source_relpath)
         for dirname in dirnames:
             new_dir = os.path.join(dst_abspath, dirname)
@@ -501,7 +500,7 @@ def reverse_expanduser(path):
         return path
     user_path = os.path.expanduser("~")
     if path.startswith(user_path):
-        path = path[len(user_path) :].strip("/")
+        path = path[len(user_path):].strip("/")
         return "~/" + path
     return path
 

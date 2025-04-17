@@ -1,5 +1,4 @@
 from gettext import gettext as _
-
 from gi.repository import Gtk
 
 from lutris.cache import get_custom_cache_path, save_custom_cache_path

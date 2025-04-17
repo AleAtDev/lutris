@@ -58,7 +58,6 @@ class DLLManager:
             return self._version
         versions = self.versions
         if versions:
-
             def get_preference_key(v):
                 return not self.is_compatible_version(v), not self.is_recommended_version(v)
 

@@ -4,7 +4,6 @@ import json
 import os
 import sys
 from gettext import gettext as _
-
 from gi.repository import GLib
 
 from lutris import __version__

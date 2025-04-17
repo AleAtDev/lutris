@@ -1,8 +1,7 @@
 import os
 from gettext import gettext as _
-from typing import Callable, Tuple
-
 from gi.repository import Gio, Gtk
+from typing import Callable, Tuple
 
 from lutris import settings
 from lutris.api import (

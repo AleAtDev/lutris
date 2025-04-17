@@ -2,7 +2,6 @@
 
 import os
 from gettext import gettext as _
-
 from gi.repository import GObject, Gtk
 
 from lutris.gui.installer.widgets import InstallerLabel

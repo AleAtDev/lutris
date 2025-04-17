@@ -1,7 +1,9 @@
 {
     "human_name": "Ruffle",
     "description": "Emulates Flash games",
-    "platforms": ["Flash"],
+    "platforms": [
+        "Flash"
+    ],
     "runner_executable": "ruffle/ruffle",
     "download_url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2024-05-22/ruffle-nightly-2024_05_22-linux-x86_64.tar.gz",
     "game_options": [
@@ -37,12 +39,30 @@
             "type": "choice",
             "label": "Graphics backend",
             "choices": [
-                ["Automatic", "default"],
-                ["Vulkan", "vulkan"],
-                ["Metal", "metal"],
-                ["DirectX 12", "dx12"],
-                ["DirectX 11", "dx11"],
-                ["OpenGL", "gl"]
+                [
+                    "Automatic",
+                    "default"
+                ],
+                [
+                    "Vulkan",
+                    "vulkan"
+                ],
+                [
+                    "Metal",
+                    "metal"
+                ],
+                [
+                    "DirectX 12",
+                    "dx12"
+                ],
+                [
+                    "DirectX 11",
+                    "dx11"
+                ],
+                [
+                    "OpenGL",
+                    "gl"
+                ]
             ],
             "default": "default",
             "argument": "--graphics"
@@ -52,8 +72,14 @@
             "type": "choice",
             "label": "Power preference",
             "choices": [
-                ["Low", "low"],
-                ["High", "high"]
+                [
+                    "Low",
+                    "low"
+                ],
+                [
+                    "High",
+                    "high"
+                ]
             ],
             "default": "high",
             "argument": "--power"
@@ -78,10 +104,22 @@
             "type": "choice",
             "label": "Open URLs",
             "choices": [
-                ["Automatic", "off"],
-                ["Allow", "allow"],
-                ["Confirm", "confirm"],
-                ["Deny", "deny"]
+                [
+                    "Automatic",
+                    "off"
+                ],
+                [
+                    "Allow",
+                    "allow"
+                ],
+                [
+                    "Confirm",
+                    "confirm"
+                ],
+                [
+                    "Deny",
+                    "deny"
+                ]
             ],
             "default": "off",
             "argument": "--open-url-mode"

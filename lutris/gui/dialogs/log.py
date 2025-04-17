@@ -3,7 +3,6 @@
 import os
 from datetime import datetime
 from gettext import gettext as _
-
 from gi.repository import Gdk, GObject, Gtk, Pango
 
 from lutris.gui.dialogs import FileDialog

@@ -1,7 +1,9 @@
 {
     "human_name": "Virtual Jaguar",
     "description": "Atari Jaguar emulator",
-    "platforms": ["Atari Jaguar"],
+    "platforms": [
+        "Atari Jaguar"
+    ],
     "runner_executable": "virtualjaguar/virtualjaguar",
     "game_options": [
         {
@@ -13,7 +15,6 @@
         }
     ],
     "runner_options": [
-
         {
             "option": "config",
             "type": "bool",

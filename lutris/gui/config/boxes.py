@@ -1,14 +1,12 @@
 """Widget generators and their signal handlers"""
 
 import os
-
 # Standard Library
 # pylint: disable=no-member,too-many-public-methods
 from gettext import gettext as _
-from typing import Any, Dict, Optional
-
 # Third Party Libraries
 from gi.repository import Gtk, Pango
+from typing import Any, Dict, Optional
 
 # Lutris Modules
 from lutris import settings, sysoptions

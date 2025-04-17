@@ -1,9 +1,8 @@
 import sys
 import threading
 import traceback
-from typing import Callable
-
 from gi.repository import GLib
+from typing import Callable
 
 from lutris.util.log import logger
 

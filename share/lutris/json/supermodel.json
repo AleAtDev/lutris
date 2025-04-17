@@ -1,7 +1,9 @@
 {
     "human_name": "Supermodel",
     "description": "A Sega Model 3 Arcade Emulator",
-    "platforms": ["Arcade"],
+    "platforms": [
+        "Arcade"
+    ],
     "runner_executable": "supermodel/supermodel",
     "game_options": [
         {

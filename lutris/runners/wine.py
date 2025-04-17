@@ -1012,9 +1012,9 @@ class wine(Runner):
                         value
                         and key in ("Desktop", "WineDesktop")
                         and (
-                            "wine-ge" in self.get_executable().casefold()
-                            or proton.is_proton_path(self.get_executable())
-                        )
+                        "wine-ge" in self.get_executable().casefold()
+                        or proton.is_proton_path(self.get_executable())
+                    )
                     ):
                         logger.warning("Wine Virtual Desktop can't be used with Wine-GE and Proton")
                         value = None

@@ -4,7 +4,6 @@
 import os.path
 import shutil
 from gettext import gettext as _
-
 from gi.repository import GdkPixbuf, Gtk, Pango
 
 from lutris import runners, settings

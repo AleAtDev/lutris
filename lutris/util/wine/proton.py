@@ -208,8 +208,8 @@ def get_game_id(game, env) -> str:
         if (
             umu_game["store"]
             and (
-                umu_game["store"] == game.service or (umu_game["store"] == "humble" and game.service == "humblebundle")
-            )
+            umu_game["store"] == game.service or (umu_game["store"] == "humble" and game.service == "humblebundle")
+        )
             and umu_game["appid"] == game.appid
         ):
             return umu_game["umu_id"]

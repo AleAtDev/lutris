@@ -1,6 +1,5 @@
 from datetime import datetime
 from gettext import gettext as _
-
 from gi.repository import Gtk, Pango
 
 from lutris import runners, services

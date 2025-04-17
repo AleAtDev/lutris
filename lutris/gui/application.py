@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import gi
 import json
 import logging
 import os
@@ -25,8 +26,6 @@ import tempfile
 from datetime import datetime, timedelta
 from gettext import gettext as _
 from typing import List
-
-import gi
 
 from ..util.busy import BusyAsyncCall
 

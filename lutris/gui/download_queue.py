@@ -1,8 +1,7 @@
 # pylint: disable=no-member
 import os
-from typing import Any, Callable, Dict, Iterable, List, Set
-
 from gi.repository import GObject, Gtk
+from typing import Any, Callable, Dict, Iterable, List, Set
 
 from lutris.gui.widgets.gi_composites import GtkTemplate
 from lutris.gui.widgets.progress_box import ProgressBox

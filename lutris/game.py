@@ -9,9 +9,8 @@ import signal
 import subprocess
 import time
 from gettext import gettext as _
-from typing import cast
-
 from gi.repository import Gio, GLib, Gtk
+from typing import cast
 
 from lutris import settings
 from lutris.config import LutrisConfig
@@ -367,7 +366,6 @@ class Game:
             game_id = None
 
         if game_id:
-
             def on_error(error: BaseException) -> None:
                 logger.exception("Unable to install game: %s", error)
 

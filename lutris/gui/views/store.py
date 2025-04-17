@@ -2,16 +2,14 @@
 
 # pylint: disable=not-an-iterable
 import time
-from typing import Set, Union
-
 from gi.repository import GLib, GObject, Gtk
+from typing import Set, Union
 
 from lutris import settings
 from lutris.database import sql
 from lutris.database.games import get_all_installed_game_for_service, get_games
 from lutris.gui.views.store_item import StoreItem
 from lutris.util.strings import gtk_safe
-
 from . import (
     COL_ID,
     COL_INSTALLED,

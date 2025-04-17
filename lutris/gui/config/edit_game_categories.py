@@ -1,8 +1,7 @@
 # pylint: disable=no-member
 from gettext import gettext as _
-from typing import Sequence
-
 from gi.repository import Gtk
+from typing import Sequence
 
 from lutris.database import categories as categories_db
 from lutris.database.categories import is_reserved_category

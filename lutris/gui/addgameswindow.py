@@ -1,6 +1,5 @@
 import os
 from gettext import gettext as _
-
 from gi.repository import Gio, Gtk
 
 from lutris import api, sysoptions

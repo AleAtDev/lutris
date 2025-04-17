@@ -4,9 +4,8 @@ import os
 import shlex
 import shutil
 import stat
-from textwrap import dedent
-
 from gi.repository import GLib
+from textwrap import dedent
 
 from lutris.api import format_installer_url
 from lutris.settings import CACHE_DIR

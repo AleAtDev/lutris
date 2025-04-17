@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import os
 import sys
-
 from setuptools import setup
 
 from lutris import __version__ as VERSION

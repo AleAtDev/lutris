@@ -1,9 +1,8 @@
 # pylint: disable=no-member
 from copy import copy
 from gettext import gettext as _
-from typing import Callable, Dict, List, Optional, Tuple
-
 from gi.repository import GObject, Gtk
+from typing import Callable, Dict, List, Optional, Tuple
 
 from lutris import runners, services
 from lutris.database import categories as categories_db

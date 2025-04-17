@@ -12,6 +12,7 @@ except ImportError:
 
 from PIL import Image
 
+
 # From https://github.com/firodj/extract-icon-py
 
 
@@ -85,7 +86,7 @@ class ExtractIcon(object):
 
             data_rva = grp_icon_dir_entry.data.struct.OffsetToData
             size = grp_icon_dir_entry.data.struct.Size
-            data = self.pe.get_memory_mapped_image()[data_rva : data_rva + size]
+            data = self.pe.get_memory_mapped_image()[data_rva: data_rva + size]
             file_offset = self.pe.get_offset_from_rva(data_rva)
 
             grp_icon_dir = pefile.Structure(self.GRPICONDIR_format, file_offset=file_offset)
@@ -112,13 +113,13 @@ class ExtractIcon(object):
 
         data_rva = icon_entry.data.struct.OffsetToData
         size = icon_entry.data.struct.Size
-        data = self.pe.get_memory_mapped_image()[data_rva : data_rva + size]
+        data = self.pe.get_memory_mapped_image()[data_rva: data_rva + size]
 
         return data
 
     def export_raw(self, entries, index=None):
         if index is not None:
-            entries = entries[index : index + 1]
+            entries = entries[index: index + 1]
 
         ico = struct.pack("<HHH", 0, self.RES_ICON, len(entries))
         data_offset = None

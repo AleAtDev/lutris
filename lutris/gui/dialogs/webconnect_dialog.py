@@ -1,10 +1,9 @@
 """isort:skip_file"""
 
+import gi
 import os
 from gettext import gettext as _
 from typing import TYPE_CHECKING
-
-import gi
 
 if TYPE_CHECKING:
     from lutris.services.base import OnlineService

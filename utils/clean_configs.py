@@ -11,7 +11,6 @@ config_files = set()
 for filename in os.listdir(CONFIG_DIR):
     config_files.add(filename)
 
-
 extra_configs = config_files - config_paths
 for extra in extra_configs:
     os.unlink(os.path.join(CONFIG_DIR, extra))

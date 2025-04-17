@@ -9,9 +9,8 @@ import subprocess
 import sys
 import uuid
 from copy import copy
-from typing import List
-
 from gi.repository import GLib
+from typing import List
 
 from lutris import settings
 from lutris.util import system

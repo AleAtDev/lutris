@@ -4,9 +4,8 @@
 import os
 import traceback
 from gettext import gettext as _
-from typing import List
-
 from gi.repository import Gdk, Gio, GLib, Gtk
+from typing import List
 
 from lutris import settings
 from lutris.config import LutrisConfig
@@ -49,7 +48,8 @@ class MarkupLabel(Gtk.Label):
         self.set_alignment(0.5, 0)
 
 
-class InstallerWindow(ModelessDialog, DialogInstallUIDelegate, ScriptInterpreter.InterpreterUIDelegate):  # pylint: disable=too-many-public-methods
+class InstallerWindow(ModelessDialog, DialogInstallUIDelegate,
+                      ScriptInterpreter.InterpreterUIDelegate):  # pylint: disable=too-many-public-methods
     """GUI for the install process.
 
     This window is divided into pages; as you go through the install each page

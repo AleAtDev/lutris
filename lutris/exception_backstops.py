@@ -1,7 +1,6 @@
 from functools import wraps
-from typing import Any, Callable, Iterable
-
 from gi.repository import Gio, GLib, GObject, Gtk
+from typing import Any, Callable, Iterable
 
 from lutris.gui.dialogs import display_error
 from lutris.util.log import logger

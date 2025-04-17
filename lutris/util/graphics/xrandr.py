@@ -39,7 +39,7 @@ def get_outputs():  # pylint: disable=too-many-locals
                 connected_index = fields.index("connected", 1)
                 name_fields = fields[:connected_index]
                 name = " ".join(name_fields)
-                data_fields = fields[connected_index + 1 :]
+                data_fields = fields[connected_index + 1:]
                 if data_fields[0] == "primary":
                     data_fields = data_fields[1:]
                 geometry, rotate, *_ = data_fields
@@ -125,10 +125,10 @@ def change_resolution(resolution):
             logger.debug("Switching to %s on %s", display.mode, display.name)
 
             if display.rotation is not None and display.rotation in (
-                "normal",
-                "left",
-                "right",
-                "inverted",
+                    "normal",
+                    "left",
+                    "right",
+                    "inverted",
             ):
                 rotation = display.rotation
             else:

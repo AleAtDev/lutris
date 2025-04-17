@@ -1,5 +1,4 @@
 from gettext import gettext as _
-
 from gi.repository import GObject, Gtk
 
 from lutris.exceptions import InvalidGameMoveError

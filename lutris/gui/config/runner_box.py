@@ -1,5 +1,4 @@
 from gettext import gettext as _
-
 from gi.repository import GObject, Gtk
 
 from lutris import runners
@@ -111,7 +110,6 @@ class RunnerBox(Gtk.Box):
             }
         )
         if Gtk.ResponseType.YES == dialog.result:
-
             def on_runner_uninstalled():
                 self.emit("runner-removed")
 

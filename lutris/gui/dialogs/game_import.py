@@ -1,7 +1,6 @@
 from collections import OrderedDict
 from copy import deepcopy
 from gettext import gettext as _
-
 from gi.repository import Gio, GLib, Gtk
 
 from lutris.config import write_game_config

@@ -9,7 +9,7 @@ on:
   # See below for details about the 'release' event.
   # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release
   release:
-    types: [released,prereleased]
+    types: [ released,prereleased ]
 
 # Requires that PPA_GPG_PRIVATE_KEY & PPA_GPG_PASSPHRASE be defined
 # as repository secrets and that PPA_RELEASE_URI & PPA_STAGING_URI

@@ -1,9 +1,9 @@
 """Base class and utilities for JSON based runners"""
 
-import json
 import os
 import shlex
 
+import json
 from lutris import settings
 from lutris.exceptions import MissingGameExecutableError
 from lutris.runners.runner import Runner

@@ -1,8 +1,7 @@
 """AppIndicator/AyatanaAppIndicator based tray icon"""
 
-from gettext import gettext as _
-
 import gi
+from gettext import gettext as _
 from gi.repository import Gtk
 
 from lutris.database import categories

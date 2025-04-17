@@ -1,8 +1,7 @@
 # pylint: disable=no-member
 from gettext import gettext as _
-from typing import Dict, Set
-
 from gi.repository import Gtk
+from typing import Dict, Set
 
 from lutris.database import categories as categories_db
 from lutris.database import games as games_db
@@ -119,7 +118,7 @@ class EditCategoryGamesDialog(SavableModelessDialog):
                         "question": _(
                             "If you rename this category, it will be combined with '%s'. " "Do you want to merge them?"
                         )
-                        % new_name,
+                                    % new_name,
                         "parent": self,
                     }
                 )

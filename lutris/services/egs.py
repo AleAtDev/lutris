@@ -2,11 +2,10 @@
 
 import json
 import os
-from gettext import gettext as _
-from typing import Any, Dict, Optional
-
 import requests
+from gettext import gettext as _
 from gi.repository import Gio
+from typing import Any, Dict, Optional
 
 from lutris import settings
 from lutris.config import LutrisConfig, write_game_config

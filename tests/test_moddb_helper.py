@@ -10,7 +10,6 @@ except ImportError:
     moddb = object
     logger.error("ModDB tests skipped")
     SKIP_TESTS = True
-from lutris.util.log import logger
 from lutris.util.moddb import ModDB, is_moddb_url
 
 
@@ -33,7 +32,6 @@ class ModDBHelperTests(unittest.TestCase):
         return self.page_type(self.mirrors_list)
 
     if not SKIP_TESTS:
-
         class ModDBFileObj(moddb.pages.File):
             def __init__(self, mirrors_list):
                 self.mirrors_list = mirrors_list

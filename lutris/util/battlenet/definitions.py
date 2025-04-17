@@ -1,8 +1,7 @@
 import dataclasses as dc
 import json
-from typing import List, Optional
-
 import requests
+from typing import List, Optional
 
 
 class DataclassJSONEncoder(json.JSONEncoder):

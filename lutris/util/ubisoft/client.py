@@ -2,11 +2,10 @@
 # https://github.com/FriendsOfGalaxy/galaxy-integration-uplay
 
 import json
+import requests
 import time
 from datetime import datetime
 from gettext import gettext as _
-
-import requests
 
 from lutris.util.log import logger
 from lutris.util.ubisoft.consts import CHROME_USERAGENT, CLUB_APPID
@@ -234,37 +233,37 @@ class UbisoftConnectClient:
             "operationName": "AllGames",
             "variables": {"owned": True},
             "query": "query AllGames {"
-            "viewer {"
-            "    id"
-            "    ...ownedGamesList"
-            "  }"
-            "}"
-            "fragment gameProps on Game {"
-            "  id"
-            "  spaceId"
-            "  name"
-            "}"
-            "fragment ownedGameProps on Game {"
-            "  ...gameProps"
-            "  viewer {"
-            "    meta {"
-            "      id"
-            "      ownedPlatformGroups {"
-            "        id"
-            "        name"
-            "        type"
-            "      }"
-            "    }"
-            "  }"
-            "}"
-            "fragment ownedGamesList on User {"
-            "  ownedGames: games(filterBy: {isOwned: true}) {"
-            "    totalCount"
-            "    nodes {"
-            "      ...ownedGameProps"
-            "    }"
-            "  }"
-            "}",
+                     "viewer {"
+                     "    id"
+                     "    ...ownedGamesList"
+                     "  }"
+                     "}"
+                     "fragment gameProps on Game {"
+                     "  id"
+                     "  spaceId"
+                     "  name"
+                     "}"
+                     "fragment ownedGameProps on Game {"
+                     "  ...gameProps"
+                     "  viewer {"
+                     "    meta {"
+                     "      id"
+                     "      ownedPlatformGroups {"
+                     "        id"
+                     "        name"
+                     "        type"
+                     "      }"
+                     "    }"
+                     "  }"
+                     "}"
+                     "fragment ownedGamesList on User {"
+                     "  ownedGames: games(filterBy: {isOwned: true}) {"
+                     "    totalCount"
+                     "    nodes {"
+                     "      ...ownedGameProps"
+                     "    }"
+                     "  }"
+                     "}",
         }
         payload = json.dumps(payload)
         headers = {"Content-Type": "application/json"}

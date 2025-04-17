@@ -6,7 +6,6 @@ import re
 import shlex
 import subprocess
 from gettext import gettext as _
-
 from gi.repository import Gio
 
 from lutris import settings

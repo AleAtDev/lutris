@@ -1,11 +1,10 @@
 """libretro runner"""
 
 import os
+import requests
 from gettext import gettext as _
 from operator import itemgetter
 from zipfile import ZipFile
-
-import requests
 
 from lutris import settings
 from lutris.config import LutrisConfig

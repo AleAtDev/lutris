@@ -1,7 +1,6 @@
 import time
-from typing import List
-
 from gi.repository import Gdk, Gio, GObject, Gtk
+from typing import List
 
 from lutris.database.games import get_game_for_service
 from lutris.database.services import ServiceGameCollection

@@ -1,6 +1,5 @@
-from typing import Callable
-
 from gi.repository import Gtk, Pango
+from typing import Callable
 
 from lutris.util.jobs import schedule_repeating_at_idle
 from lutris.util.log import logger

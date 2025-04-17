@@ -1,12 +1,12 @@
 """Runner for the PICO-8 fantasy console"""
 
-import json
 import math
 import os
 import shutil
 from gettext import gettext as _
 from time import sleep
 
+import json
 from lutris import settings
 from lutris.database.games import get_game_by_field
 from lutris.exceptions import MissingGameExecutableError

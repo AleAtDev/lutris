@@ -1,11 +1,10 @@
 """Various utilities using the GObject framework"""
 
 import array
-import os
-from typing import Optional
-
 import cairo
+import os
 from gi.repository import Gdk, GdkPixbuf, Gio, GLib, Gtk
+from typing import Optional
 
 from lutris import settings
 from lutris.exceptions import MissingMediaError

@@ -1,7 +1,6 @@
 """Install script interpreter package."""
 
 import enum
-
 import yaml
 
 from lutris.api import get_game_installers, normalize_installer

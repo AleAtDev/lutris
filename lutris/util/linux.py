@@ -120,7 +120,7 @@ class LinuxSystem:  # pylint: disable=too-many-public-methods
                     logger.warning("Command '%s' not found on your system", command)
 
         # Detect if system is 64bit capable
-        self.is_64_bit = sys.maxsize > 2**32
+        self.is_64_bit = sys.maxsize > 2 ** 32
         self.arch = self.get_arch()
         self.shared_libraries = self.get_shared_libraries()
         self.populate_libraries()

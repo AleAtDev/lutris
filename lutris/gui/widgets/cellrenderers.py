@@ -1,10 +1,9 @@
 # pylint: disable=no-member
 # pylint:disable=using-constant-test
 # pylint:disable=comparison-with-callable
+import gi
 from gettext import gettext as _
 from math import floor
-
-import gi
 
 from lutris.util.jobs import schedule_at_idle
 from lutris.util.log import logger
@@ -337,7 +336,7 @@ class GridViewCellRendererImage(Gtk.CellRenderer):
                 data = surface.get_data()
 
                 offset = (y * stride) + x * 4
-                pixel = data[offset : offset + 4]
+                pixel = data[offset: offset + 4]
 
                 for channel in pixel:
                     if channel < 128:

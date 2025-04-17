@@ -3,7 +3,6 @@ import subprocess
 from gettext import gettext as _
 
 from lutris.exceptions import MissingGameExecutableError
-
 # Lutris Modules
 from lutris.runners.runner import Runner
 from lutris.util import system
@@ -162,7 +161,7 @@ class mednafen(Runner):
 
         for joy in joy_list:
             index = joy.find("Unique ID:")
-            joy_id = joy[index + 11 :]
+            joy_id = joy[index + 11:]
             logger.debug("Joystick found id %s ", joy_id)
             joy_ids.append(joy_id)
         return joy_ids

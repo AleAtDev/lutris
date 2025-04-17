@@ -3,14 +3,13 @@
 import json
 import os
 import random
+import requests
 import ssl
+import urllib3
 from gettext import gettext as _
+from gi.repository import Gio
 from typing import Any, Dict, Optional
 from xml.etree import ElementTree
-
-import requests
-import urllib3
-from gi.repository import Gio
 
 from lutris import settings
 from lutris.config import LutrisConfig, write_game_config
@@ -165,11 +164,11 @@ class EAAppService(OnlineService):
     login_url = "https://www.ea.com/login"
     redirect_uri = "https://www.ea.com/"
     origin_login_url = (
-        "https://accounts.ea.com/connect/auth"
-        "?response_type=code&client_id=ORIGIN_SPA_ID&display=originXWeb/login"
-        "&locale=en_US&release_type=prod"
-        "&redirect_uri=%s"
-    ) % origin_redirect_uri
+                           "https://accounts.ea.com/connect/auth"
+                           "?response_type=code&client_id=ORIGIN_SPA_ID&display=originXWeb/login"
+                           "&locale=en_US&release_type=prod"
+                           "&redirect_uri=%s"
+                       ) % origin_redirect_uri
     login_user_agent = settings.DEFAULT_USER_AGENT + " QtWebEngine/5.8.0"
 
     def __init__(self):

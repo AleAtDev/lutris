@@ -30,10 +30,9 @@ See: https://gitlab.gnome.org/GNOME/pygobject/merge_requests/52
 # Standard Library
 import inspect
 import warnings
-from os.path import abspath, join
-
 # Third Party Libraries
 from gi.repository import Gio, GLib, GObject, Gtk
+from os.path import abspath, join
 
 # Lutris Modules
 from lutris.gui.dialogs import ErrorDialog

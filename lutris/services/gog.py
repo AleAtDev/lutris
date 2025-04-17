@@ -6,10 +6,9 @@ import time
 import typing
 from collections import defaultdict
 from gettext import gettext as _
+from lxml import etree
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import parse_qsl, unquote, urlencode, urlparse
-
-from lxml import etree
 
 from lutris import settings
 from lutris.exceptions import AuthenticationError, UnavailableGameError

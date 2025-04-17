@@ -1,6 +1,5 @@
 import os
 from gettext import gettext as _
-
 from gi.repository import Gio
 
 from lutris.database.games import get_game_by_field, get_games

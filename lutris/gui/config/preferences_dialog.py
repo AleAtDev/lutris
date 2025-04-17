@@ -2,9 +2,8 @@
 
 # pylint: disable=no-member
 from gettext import gettext as _
-from textwrap import dedent
-
 from gi.repository import Gtk
+from textwrap import dedent
 
 from lutris.config import LutrisConfig
 from lutris.gui.config.accounts_box import AccountsBox

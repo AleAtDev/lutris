@@ -8,7 +8,6 @@
 """Query Vulkan capabilities"""
 
 from collections import namedtuple
-
 # Standard Library
 from ctypes import (
     CDLL,

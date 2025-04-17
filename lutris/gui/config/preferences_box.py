@@ -1,7 +1,6 @@
 from gettext import gettext as _
-from typing import Any, Dict, Optional
-
 from gi.repository import Gio, Gtk
+from typing import Any, Dict, Optional
 
 from lutris import settings
 from lutris.gui.config.base_config_box import BaseConfigBox

@@ -1,6 +1,5 @@
-from typing import Callable
-
 from gi.repository import Gtk
+from typing import Callable
 
 from lutris import settings
 from lutris.gui.config.widget_generator import WidgetWarningMessageBox

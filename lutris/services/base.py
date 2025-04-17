@@ -3,10 +3,9 @@
 import os
 import shutil
 from gettext import gettext as _
+from gi.repository import Gio
 from pathlib import Path
 from typing import Any, Dict, List
-
-from gi.repository import Gio
 
 from lutris import api, settings
 from lutris.api import get_game_installers

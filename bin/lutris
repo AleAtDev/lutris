@@ -50,7 +50,7 @@ try:
     except Exception as ex:
         sys.stderr.write(
             "Couldn't bind gettext domain, translations won't work.\n"
-            "LOCALE_DIR: %s\nError: %s\n" % (optional_settings.LOCALE_DIR,ex)
+            "LOCALE_DIR: %s\nError: %s\n" % (optional_settings.LOCALE_DIR, ex)
         )
 except ImportError:
     pass

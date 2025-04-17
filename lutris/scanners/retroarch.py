@@ -15,7 +15,6 @@ SCANNERS = {
     "opera": "3DO",
 }
 
-
 ROM_FLAGS = [
     "USA",
     "Europe",

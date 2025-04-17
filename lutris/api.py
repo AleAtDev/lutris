@@ -3,6 +3,7 @@
 import json
 import os
 import re
+import requests
 import socket
 import time
 import urllib.error
@@ -12,8 +13,6 @@ from collections import OrderedDict
 from datetime import datetime
 from gettext import gettext as _
 from typing import Any, Dict, Optional, Tuple
-
-import requests
 
 from lutris import settings
 from lutris.gui.widgets import NotificationSource
@@ -128,11 +127,11 @@ def connect(username, password):
             LUTRIS_ACCOUNT_CONNECTED.fire()
             return token
     except (
-        requests.RequestException,
-        requests.ConnectionError,
-        requests.HTTPError,
-        requests.TooManyRedirects,
-        requests.Timeout,
+            requests.RequestException,
+            requests.ConnectionError,
+            requests.HTTPError,
+            requests.TooManyRedirects,
+            requests.Timeout,
     ) as ex:
         logger.error("Unable to connect to server (%s): %s", login_url, ex)
         return False

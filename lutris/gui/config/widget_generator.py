@@ -3,10 +3,9 @@
 import os
 from abc import ABC, abstractmethod
 from gettext import gettext as _
+from gi.repository import Gdk, Gtk
 from inspect import Parameter, signature
 from typing import Any, Callable, Dict, List, Optional, Union
-
-from gi.repository import Gdk, Gtk
 
 from lutris.config import LutrisConfig
 from lutris.gui.widgets import NotificationSource

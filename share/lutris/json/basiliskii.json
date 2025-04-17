@@ -1,7 +1,9 @@
 {
     "human_name": "Basilisk II",
     "description": "Basilisk II is an Open Source 68k Macintosh emulator",
-    "platforms": ["Macintosh"],
+    "platforms": [
+        "Macintosh"
+    ],
     "runnable_alone": "True",
     "runner_executable": "basiliskii/BasiliskII-x86_64.AppImage",
     "flatpak_id": "net.cebix.basilisk",
@@ -15,8 +17,7 @@
         }
     ],
     "runner_options": [
-
-       {
+        {
             "option": "config",
             "type": "bool",
             "label": "config",

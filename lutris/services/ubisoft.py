@@ -4,10 +4,9 @@ import json
 import os
 import shutil
 from gettext import gettext as _
+from gi.repository import Gio
 from typing import Any, Dict, Optional
 from urllib.parse import unquote
-
-from gi.repository import Gio
 
 from lutris import settings
 from lutris.config import LutrisConfig, write_game_config
@@ -116,7 +115,7 @@ class UbisoftConnectService(OnlineService):
     def login_callback(self, credentials):
         """Called after the user has logged in successfully"""
         logger.info("Login to Ubisoft Connect sucessful")
-        url = credentials[len("https://connect.ubisoft.com/change_domain/") :]
+        url = credentials[len("https://connect.ubisoft.com/change_domain/"):]
         unquoted_url = unquote(url)
         storage_jsons = json.loads("[" + unquoted_url + "]")
         user_data = self.client.authorise_with_local_storage(storage_jsons)
@@ -283,10 +282,10 @@ class UbisoftConnectService(OnlineService):
                             "args": f"uplay://install/{install_id}",
                             "prefix": ubisoft_connect.config.game_config["prefix"],
                             "description": (
-                                "Ubisoft will now open and install %s. "
-                                "Close Ubisoft Connect to complete the install process."
-                            )
-                            % db_game["name"],
+                                               "Ubisoft will now open and install %s. "
+                                               "Close Ubisoft Connect to complete the install process."
+                                           )
+                                           % db_game["name"],
                         }
                     }
                 ],

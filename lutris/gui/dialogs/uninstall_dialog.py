@@ -1,9 +1,8 @@
 # pylint: disable=no-member
 import os
 from gettext import gettext as _
-from typing import Callable, Iterable, List
-
 from gi.repository import GObject, Gtk
+from typing import Callable, Iterable, List
 
 from lutris import settings
 from lutris.database.games import get_game_by_field, get_games
@@ -296,9 +295,9 @@ class UninstallDialog(Gtk.Dialog):
 
     def on_response(self, _dialog, response: Gtk.ResponseType) -> None:
         if response in (
-            Gtk.ResponseType.DELETE_EVENT,
-            Gtk.ResponseType.CANCEL,
-            Gtk.ResponseType.OK,
+                Gtk.ResponseType.DELETE_EVENT,
+                Gtk.ResponseType.CANCEL,
+                Gtk.ResponseType.OK,
         ):
             self.destroy()
 

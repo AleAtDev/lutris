@@ -1,9 +1,8 @@
 import os
 from gettext import gettext as _
+from gi.repository import GObject, Gtk, Pango
 from typing import Optional
 from urllib.parse import urlparse
-
-from gi.repository import GObject, Gtk, Pango
 
 from lutris.gui.dialogs import display_error
 from lutris.util.downloader import Downloader

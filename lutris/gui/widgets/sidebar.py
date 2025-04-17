@@ -2,9 +2,8 @@
 
 import locale
 from gettext import gettext as _
-from typing import List
-
 from gi.repository import GObject, Gtk, Pango
+from typing import List
 
 from lutris import runners, services
 from lutris.config import LutrisConfig

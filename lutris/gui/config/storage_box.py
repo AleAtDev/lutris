@@ -1,6 +1,5 @@
 import os
 from gettext import gettext as _
-
 from gi.repository import Gtk
 
 from lutris.cache import get_custom_cache_path, save_custom_cache_path, validate_custom_cache_path
@@ -113,7 +112,7 @@ class StorageBox(BaseConfigBox):
                 if os.access(file_path, os.R_OK):
                     bios_path_size += os.path.getsize(file_path)
                     bios_path_file_count += 1
-                    bios_path_depth = path[len(bios_path) :].count(os.sep)
+                    bios_path_depth = path[len(bios_path):].count(os.sep)
 
         if bios_path_size > MAX_BIOS_FOLDER_SIZE:
             return bios_path, _("Folder is too large (%s)") % human_size(bios_path_size)

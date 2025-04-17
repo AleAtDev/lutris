@@ -1,5 +1,6 @@
 """HTTP utilities"""
 
+import certifi
 import json
 import os
 import socket
@@ -8,8 +9,6 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from ssl import CertificateError
-
-import certifi
 
 from lutris.settings import PROJECT, SITE_URL, VERSION, read_setting
 from lutris.util import system

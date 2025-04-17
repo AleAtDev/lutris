@@ -1,7 +1,9 @@
 {
     "human_name": "Citra",
     "description": "Nintendo 3DS emulator",
-    "platforms": ["Nintendo 3DS"],
+    "platforms": [
+        "Nintendo 3DS"
+    ],
     "require_libs": [],
     "runner_executable": "citra/citra-qt",
     "flatpak_id": "org.citra_emu.citra",

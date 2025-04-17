@@ -1,10 +1,9 @@
 """Check to run at program start"""
 
+import gi
 import os
 import sqlite3
 from gettext import gettext as _
-
-import gi
 
 gi.require_version("Gdk", "3.0")
 gi.require_version("Gtk", "3.0")

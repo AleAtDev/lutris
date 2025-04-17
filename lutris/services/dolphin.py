@@ -1,9 +1,8 @@
 import json
 import os
+from PIL import Image
 from gettext import gettext as _
 from typing import List
-
-from PIL import Image
 
 from lutris import settings
 from lutris.runners.dolphin import PLATFORMS

@@ -6,10 +6,9 @@ import os
 from collections import namedtuple
 from datetime import datetime
 from gettext import gettext as _
+from gi.repository import Gdk, Gio, GLib, Gtk
 from typing import Iterable, List, Set
 from urllib.parse import unquote, urlparse
-
-from gi.repository import Gdk, Gio, GLib, Gtk
 
 from lutris import services, settings
 from lutris.api import (
@@ -71,7 +70,8 @@ from lutris.util.wine.wine import clear_wine_version_cache
 
 
 @GtkTemplate(ui=os.path.join(datapath.get(), "ui", "lutris-window.ui"))
-class LutrisWindow(Gtk.ApplicationWindow, DialogLaunchUIDelegate, DialogInstallUIDelegate):  # pylint: disable=too-many-public-methods
+class LutrisWindow(Gtk.ApplicationWindow, DialogLaunchUIDelegate,
+                   DialogInstallUIDelegate):  # pylint: disable=too-many-public-methods
     """Handler class for main window signals."""
 
     default_view_type = "grid"
@@ -292,7 +292,6 @@ class LutrisWindow(Gtk.ApplicationWindow, DialogLaunchUIDelegate, DialogInstallU
                 action.connect("change-state", value.callback)
             self.actions[name] = action
             if value.enabled:
-
                 def updater(action=action, value=value):
                     action.props.enabled = value.enabled()
 

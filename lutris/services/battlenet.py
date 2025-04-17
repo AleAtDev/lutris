@@ -3,7 +3,6 @@
 import json
 import os
 from gettext import gettext as _
-
 from gi.repository import Gio
 
 from lutris import settings

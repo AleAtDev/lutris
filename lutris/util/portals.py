@@ -1,8 +1,7 @@
 import os
 from gettext import gettext as _
-from typing import Callable, Iterable
-
 from gi.repository import Gio, GLib, GObject
+from typing import Callable, Iterable
 
 from lutris.util.jobs import schedule_at_idle
 from lutris.util.log import logger

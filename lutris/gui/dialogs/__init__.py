@@ -1,13 +1,12 @@
 """Commonly used dialogs"""
 
+import gi
 import inspect
 import os
 import traceback
 from builtins import BaseException
 from gettext import gettext as _
 from typing import Any, Callable, Dict, Type, TypeVar, Union
-
-import gi
 
 gi.require_version("Gdk", "3.0")
 gi.require_version("Gtk", "3.0")

@@ -5,7 +5,6 @@ from gettext import gettext as _
 
 from lutris import settings
 from lutris.exceptions import MissingGameExecutableError
-
 # Lutris Modules
 from lutris.runners.commands.dosbox import dosexec, makeconfig  # NOQA pylint: disable=unused-import
 from lutris.runners.runner import Runner

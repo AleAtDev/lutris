@@ -1,7 +1,9 @@
 {
     "human_name": "Adventure Game Studio",
     "description": "Graphics adventure engine",
-    "platforms": ["Linux"],
+    "platforms": [
+        "Linux"
+    ],
     "runner_executable": "ags/ags.sh",
     "game_options": [
         {
@@ -23,10 +25,22 @@
             "type": "choice",
             "label": "Graphics filter",
             "choices": [
-                ["None", "none"],
-                ["Standard scaling", "stdscale"],
-                ["HQ2x", "hq2x"],
-                ["HQ3x", "hq3x"]
+                [
+                    "None",
+                    "none"
+                ],
+                [
+                    "Standard scaling",
+                    "stdscale"
+                ],
+                [
+                    "HQ2x",
+                    "hq2x"
+                ],
+                [
+                    "HQ3x",
+                    "hq3x"
+                ]
             ],
             "argument": "--gfxfilter"
         }

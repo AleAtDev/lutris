@@ -12,8 +12,8 @@ script:
   system:
     env:
       a: ""
-  wine: {}
-  files: []
+  wine: { }
+  files: [ ]
   installer:
     - execute:
         command: ""

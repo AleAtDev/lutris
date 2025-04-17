@@ -1,7 +1,6 @@
 from gettext import gettext as _
-from typing import Optional
-
 from gi.repository import Gdk, Gtk
+from typing import Optional
 
 from lutris.exceptions import UnavailableRunnerError
 from lutris.game import Game

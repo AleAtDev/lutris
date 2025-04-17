@@ -1,10 +1,9 @@
 import bisect
 import os
+import requests
 import threading
 import time
 from typing import Any
-
-import requests
 
 from lutris import __version__
 from lutris.util import jobs

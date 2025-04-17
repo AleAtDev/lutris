@@ -1,9 +1,8 @@
 import json
 import os
 from gettext import gettext as _
-from typing import Any, Dict, Iterable, List, Optional
-
 from gi.repository import Gio
+from typing import Any, Dict, Iterable, List, Optional
 
 from lutris import settings
 from lutris.api import get_api_games, get_game_installers, read_api_key
